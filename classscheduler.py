@@ -20,7 +20,7 @@ def read_in_json_file_to_graph_dict(json_file):
 
 def topological_sort(graph_dict):
     visited_nodes = set()
-    reverse_post_order = []
+    reverse_post_order = list()
     for node in graph_dict.keys():
         if node not in visited_nodes:
             depth_first_search(graph_dict, node, visited_nodes, reverse_post_order)
