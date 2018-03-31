@@ -37,4 +37,7 @@ The final course schedule contained within the 'reverse' post-order list is outp
 ## Performance
 The processing of the 'graph dictionary' is described as where each node maintains a 'list' of all its adjacent edges. For each node, its neighbors are found by traversing this 'list' once in linear time. So, the sum of the sizes of the routes of all the nodes is E, where E is the total number of edges. The complexity of the depth-first search in this implementation is in O(N) (number of nodes) + O(E) = O(N + E). This is called from the original topological sort method which also runs in linear time, so negating what is not needed shows that the overall performance is within linear time of O(N + E). 
 
+## Other Considerations
+It was originally planned for this execution to happen via a class in an object-oriented format, where the topological sort was a public method that utilized the internal private method of depth-first search and then the object of the class would contain the final result list. Other attributes and class variables could be created according to parameters, etc. However, with a bash script invocation, it was simpler to show the nature of the problem solving approach with a main function 'driver' of the functions in the Python file, and simply output the final result list to standard output after the functions were executed. To summarize, the utilization of how to use these functions in a larger object-oriented scope was considered but due to the constraint of time and interviewer colloboration it was designed in the way described. 
+
 
