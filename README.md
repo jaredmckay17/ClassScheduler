@@ -8,8 +8,8 @@ This Python program reads in a JSON file with course names and pre-requisites an
 The Python file itself is invoked by a Bash script provided aptly named 'scheduler' and by passing a JSON file as a parameter to that Bash script in the following format:
 
 - Each object has these keys: 
-    - name (type string, must be provided) 
-    - pre-requisites (list of strings, must be provided)
+    - name (type string, must be provided and cannot be None) 
+    - pre-requisites (list of strings, must be provided and cannot be None but can an empty list)
 
 The output of the Bash script execution will be similar to the following output:
 
