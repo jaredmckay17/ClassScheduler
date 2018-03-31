@@ -11,7 +11,8 @@ def read_in_json_file_to_graph_dict(json_file):
         sys.exit("Error: Invalid JSON file. JSON file could not be read with following error message: " + str(e))
     for item in class_prerequisite_data:
         if item['name'] is None or item['prerequisites'] is None:
-            sys.exit("Error: Invalid courses provided. Each course must have a course name and a list of prerequisites")
+            sys.exit("Error: Invalid courses provided. Each object in the JSON file must have a course name and "
+                     "a list of prerequisites")
         else:
             graph_dict[item['name']] = item['prerequisites']
     return graph_dict
