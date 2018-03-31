@@ -5,7 +5,7 @@ This Python program reads in a JSON file with course names and associated with a
 - Courses with prerequisite courses must appear in standard output after those prequisite courses (essentially creating a 'schedule' of how courses should be taken for a student).
 
 ## How to Use
-The Python file itself is invoked by a Bash script provided aptly named 'scheduler' and by passing a JSON file as a parameter to that Bash script in the following format:
+The Python file itself is invoked by a Bash script provided aptly named 'scheduler' and by passing a JSON file as a parameter to that Bash script (e.g. ./scheduler JSON File) in the following format:
 
 - Each object in the JSON file has these keys: 
     - name (type string, must be provided and cannot be None) 
